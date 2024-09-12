@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #btn{
+        background-color: red;
+
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: none;
+    }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: rgb(0, 255, 38);
+        }
+        .box3{
+            background-color: rgb(51, 0, 255);
+        }
+        .container,
+        .content
+        {
+            background-color: lightblue;
+            padding: 5px;
+            border: 2px solid blue;
+            font-size: 26px;
+            text-align: center;
+        }
+        .content{
+            display: none;
+        }
+    
+
+</style>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<body>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="btn">click</button>
+    <p id="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p  id="mypara">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="new">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <!-- <button id="fadein">fade in</button>
+    <button id="fadeOut">fade out</button> -->
+    
+    <button id="togglefade">toggle fade</button>
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    
+    <div id="container">click here to show contain</div>
+    <div id="content">
+        <h1>hellow world</h1>
+    </div>
+    <script src="style1.js"></script>
+</body>
+</html>
