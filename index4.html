@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* #table tr{
+        border:  2px solid blue;
+    } */
+</style>
+<body>
+    <table id="table" border = 1>
+        <thead>
+          <tr>
+            <th>rollno</th>
+            <th>Name</th>
+            <th>city</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTable"></tbody>
+      </table>
+      <script>
+        const employees = [
+          { rollno: 121, name: 'John Doe', city: 'bhopal' },
+          { rollno: 122, name: 'John Doe', city: 'bhopal' },
+          { rollno: 123, name: 'John Doe', city: 'bhopal' }
+         
+        ];
+    
+        const tableBody = document.getElementById('employeeTable');
+    
+        tableBody.innerHTML = employees.map(emp => `
+          <tr>
+            <td>${emp.rollno}</td>
+            <td>${emp.name}</td>
+            <td>${emp.city}</td>
+          </tr>
+        `).join('');
+      </script>
+    
+     
+
+          
+       
+    
+    <script src="style4.js"></script>
+</body>
+</html>
