@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            padding: 20px;
+            border: 2px lightblue solid;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="display()">add Box</button>
+    <div>
+        <p>enter User name: <input type="text"> </p>
+    </div>
+    <script>
+        function display(){
+            let user=document.createElement("p");
+            user.innerHTML="enter user name :<input type='text'>";
+           document.body.appendChild(user)
+        }
+    </script>
+</body>
+</html>
